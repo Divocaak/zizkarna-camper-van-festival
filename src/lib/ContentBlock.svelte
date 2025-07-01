@@ -1,9 +1,11 @@
 <script>
 	export let title;
+	export let icon;
 </script>
 
 <div class="wrapper">
 	<h1>{title}</h1>
+	<img src="/icons/{icon}" alt="svg icon"/>
     <!-- TODO icon -->
 	<div class="content-wrapper">
 		<div class="left"><slot name="left"></slot></div>
@@ -40,6 +42,19 @@
 	.content-wrapper .left,
 	.content-wrapper .right {
 		width: 50%;
-		height: 100%;
+		min-height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 	}
+
+    .content-wrapper .left{
+        margin-right: var(--general-padding);
+    }
+
+    .content-wrapper .right{
+        margin-left: var(--general-padding);
+    }
 </style>
