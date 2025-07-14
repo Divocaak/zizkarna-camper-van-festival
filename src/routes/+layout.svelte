@@ -36,6 +36,7 @@
 		--fs-20: clamp(20px, 1.04vw, 2rem);
 		--fs-24: clamp(24px, 1.25vw, 2.5rem);
 		--fs-32: clamp(32px, 1.67vw, 3rem);
+		--fs-44: clamp(44px, 2.23vw, 2.75rem);
 		--fs-48: clamp(48px, 2.5vw, 3rem);
 		--fs-64: clamp(64px, 3.33vw, 4rem);
 		--fs-72: clamp(72px, 3.75vw, 4.5rem);
@@ -54,6 +55,8 @@
 
 	:global(h1, p, a) {
 		color: var(--grey);
+		line-height: 1.5em;
+		letter-spacing: .15em;
 	}
 
 	:global(h1) {
@@ -69,7 +72,11 @@
 		text-decoration: none;
 	}
 
+	:global(a){
+		color: var(--purple)
+	}
+
 	:global(a:hover) {
-		color: var(--purple);
+		color: var(--grey);
 	}
 </style>

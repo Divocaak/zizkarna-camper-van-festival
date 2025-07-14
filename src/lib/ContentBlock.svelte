@@ -4,9 +4,8 @@
 </script>
 
 <div class="wrapper">
-	<h1>{title}</h1>
-	<img src="/icons/{icon}" alt="svg icon"/>
-    <!-- TODO icon -->
+	<img src="/icons/{icon}" alt="svg icon" />
+	<h1>{@html title}</h1>
 	<div class="content-wrapper">
 		<div class="left"><slot name="left"></slot></div>
 		<div class="right"><slot name="right"></slot></div>
@@ -22,10 +21,18 @@
 
 	.wrapper h1 {
 		width: calc(100% - 2 * var(--general-padding));
-        border-bottom: 2px solid var(--yellow);
+		border-bottom: 2px solid var(--yellow);
 
-        padding: var(--general-padding);
-        padding-bottom: 0;
+		padding: var(--general-padding);
+		padding-bottom: 0;
+	}
+
+	.wrapper img {
+		height: 100px;
+		width: auto;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	.content-wrapper {
@@ -35,8 +42,8 @@
 		display: flex;
 		flex-direction: row;
 
-        padding: var(--general-padding);
-        padding-top: 0;
+		padding: var(--general-padding);
+		padding-top: 0;
 	}
 
 	.content-wrapper .left,
@@ -44,17 +51,40 @@
 		width: 50%;
 		min-height: 100%;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+		display: flex;
+		flex-direction: column;
+
+		align-items: stretch;
+		justify-content: flex-start;
 	}
 
-    .content-wrapper .left{
-        margin-right: var(--general-padding);
-    }
+	.content-wrapper .left {
+		margin-right: var(--general-padding);
+	}
 
-    .content-wrapper .right{
-        margin-left: var(--general-padding);
-    }
+	.content-wrapper .right {
+		margin-left: var(--general-padding);
+	}
+
+	@media only screen and (max-width: 600px) {
+		.wrapper h1 {
+			padding: calc(var(--general-padding) / 5);
+			width: calc(100% - 2 * (var(--general-padding) / 5));
+			padding-top: 150px;
+			text-align: center;
+			font-size: var(--fs-44);
+		}
+
+		.content-wrapper {
+			flex-direction: column;
+			padding: calc(var(--general-padding) / 4);
+			width: calc(100% - 2 * (var(--general-padding) / 4));
+		}
+
+		.content-wrapper .left,
+		.content-wrapper .right {
+			margin: 0;
+			width: 100%;
+		}
+	}
 </style>
