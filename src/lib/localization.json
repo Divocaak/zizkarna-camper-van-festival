@@ -1,0 +1,24 @@
+{
+    "cs": {
+        "formButtonText": "Postavil jsem svůj karavan,<br />chci se zúčastnit",
+        "about": {
+            "label": "O&nbsp;festivalu",
+            "left": "o festivalu left",
+            "right": "o festivalu right"
+        },
+        "zizkarna": {
+            "label": "O&nbsp;Žižkárně",
+            "text": "o žižkárně text"
+        },
+        "activities": {
+            "label": "Aktivity",
+            "text": "aktivity text"
+        },
+        "contacts": {
+            "label": "Kontakty",
+            "organizational": "Organizační&nbsp;záležitosti",
+            "technical": "Technické&nbsp;zajištění",
+            "media": "Media"
+        }
+    }
+}

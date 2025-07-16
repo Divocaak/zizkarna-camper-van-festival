@@ -1,24 +1,29 @@
 <script>
 	import { lang } from '$lib/stores/LangStore.js';
-	import langs from '$lib/localization.json';
+	export let label;
+	export let newVal;
 </script>
 
-<a href="/">{@html langs[$lang].formButtonText}</a>
+<button onclick={() => lang.set(newVal)}>{label}</button>
 
 <style>
-	a {
+	button {
 		position: relative;
 		background-color: var(--grey);
 		color: var(--light-grey);
 		border: 2px solid var(--grey);
 
-		padding: calc(var(--general-padding) / 3);
+		padding: calc(var(--general-padding) / 5);
 		border-radius: 1rem;
 
-		margin: 1rem;
+		/* margin: 1rem; */
+
+		text-transform: uppercase;
+
+		transition: all 0.25s ease-in-out;
 	}
 
-	a:hover {
+	button:hover {
 		background-color: var(--light-grey);
 		color: var(--purple);
 		border: 2px solid var(--purple);
