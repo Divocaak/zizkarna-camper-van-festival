@@ -34,6 +34,7 @@
 
 		/* vw = px value / 19.2 */
 		/* rem = px value / 16 */
+		--fs-8: clamp(8px, 0.41vw, .5rem);
 		--fs-12: clamp(12px, 0.625vw, 1rem);
 		--fs-14: clamp(14px, 0.73vw, 1.25rem);
 		--fs-16: clamp(16px, 0.83vw, 1.5rem);

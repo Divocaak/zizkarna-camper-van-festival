@@ -79,6 +79,7 @@
 		<ContactRow label={langs[$lang].contacts.organizational} mail="camperfest@zizkarna.cz" />
 		<ContactRow label={langs[$lang].contacts.technical} mail="technika@zizkarna.cz" />
 		<ContactRow label={langs[$lang].contacts.media} mail="media@zizkarna.cz" />
+		<p class="signature">Coded and maintained by <a href="https://divokyvojtech.cz" target="_blank">Vojtěch Divoký</a></p>
 	</div>
 </ContentBlock>
 
@@ -151,6 +152,12 @@
 		box-sizing: border-box;
 		width: 100%;
 		height: 400px;
+	}
+
+	.signature, .signature a{
+		padding-top: 200px;
+		font-size: var(--fs-8);
+		text-align: end;
 	}
 
 	@media only screen and (max-width: 600px) {
