@@ -2,22 +2,75 @@
     "cs": {
         "formButtonText": "Postavil jsem svůj karavan,<br />chci se zúčastnit",
         "about": {
-            "label": "O&nbsp;festivalu",
-            "left": "o festivalu left",
-            "right": "o festivalu right"
+            "label": "O&nbsp;Festivalu",
+            "text": "DIY Karavan Festival v Žižkárně nabídne jedinečné setkání všech nadšenců do svobodného cestování, alternativního bydlení a kultury „DIY“. Během dvoudenního programu 26.-27. září 2025 se prostor bývalých kasáren promění v živou výstavu originálně přestavěných karavanů, dodávek a přívěsů, doplněnou o workshopy, přednášky a koncerty. Festival má za cíl propojit nomády, kutily, ale také veřejnost, která má o tento druh cestování zájem."
         },
         "zizkarna": {
             "label": "O&nbsp;Žižkárně",
-            "text": "o žižkárně text"
+            "text": "Žižkárna je kulturním prostorem, který nabízí pro České Budějovice naprosto jedinečnou atmosféru starých kasárna. Snažíme se přinášet nezvyklé interprety i žánry, které jinde nedostávají prostor. Pomáháme lokálním kapelám a pravidelně spolu pořádáme hudební večery. Společně s našimi návštěvníky dáváme nový život areálu. Navazujeme na minulost, ale dáváme jí barevnost, která ji chyběla."
         },
-        "activities": {
-            "label": "Aktivity",
-            "text": "aktivity text"
+        "programme": {
+            "label": "Program",
+            "texts": [
+                "Přehlídka dodávek, autobusů, off-roadů a overlanderů",
+                "Přednášky na témata spojená s cestováním, vlastní stavbou, ale i například na právní úskalí",
+                "Každý večer a během dne se můžete těšit na několik tematických koncertů"
+            ]
         },
         "contacts": {
             "label": "Kontakty",
             "organizational": "Organizační&nbsp;záležitosti",
             "technical": "Technické&nbsp;zajištění",
+            "media": "Media"
+        }
+    },
+    "en": {
+        "formButtonText": "I have built my caravan,<br />I want to participate",
+        "about": {
+            "label": "About&nbsp;the&nbsp;festival",
+            "text": "The DIY Caravan Festival at Žižkárna offers a unique gathering for enthusiasts of free travel, alternative living, and DIY culture. Over the course of two days — September 26-27, 2025 — the former barracks will transform into a vibrant exhibition of creatively converted caravans, vans, and trailers, accompanied by workshops, talks, and live concerts. The festival aims to bring together nomads, makers, and the general public interested in this style of travel and living."
+        },
+        "zizkarna": {
+            "label": "About&nbsp;Žižkárna",
+            "text": "Žižkárna is a cultural space that offers a truly unique atmosphere of old barracks in the heart of České Budějovice. We strive to bring in unconventional performers and genres that often don't get a chance elsewhere. We support local bands and regularly co-host music nights. Together with our visitors, we're breathing new life into the area — building on its past while adding the color it once lacked."
+        },
+        "programme": {
+            "label": "Programme",
+            "texts": [
+                "DIY Van, bus, off-road and overlanders exhibition",
+                "Talks on topics related to travel, DIY vehicle builds, and even legal challenges",
+                "Every evening and throughout the day, you can look forward to a series of themed concerts"
+            ]
+        },
+        "contacts": {
+            "label": "Contacts",
+            "organizational": "Organizational&nbsp;support",
+            "technical": "Technical&nbsp;support",
+            "media": "Media"
+        }
+    },
+    "de": {
+        "formButtonText": "Ich habe meinen Wohnwagen aufgebaut,<br />ich möchte teilnehmen",
+        "about": {
+            "label": "Über&nbsp;das&nbsp;Festival",
+            "text": "Das DIY Karavan Festival in der Žižkárna bietet ein einzigartiges Treffen für alle Liebhaber des freien Reisens, alternativen Wohnens und der DIY-Kultur. Während des zweitägigen Programms am 26. und 27. September 2025 verwandelt sich das ehemalige Kasernengelände in eine lebendige Ausstellung originell umgebauter Wohnwagen, Vans und Anhänger - ergänzt durch Workshops, Vorträge und Konzerte. Ziel des Festivals ist es, Nomaden, Tüftler und auch die interessierte Öffentlichkeit miteinander zu verbinden."
+        },
+        "zizkarna": {
+            "label": "Über&nbsp;Žižkárna",
+            "text": "Žižkárna ist ein Kulturraum, der in České Budějovice die absolut einzigartige Atmosphäre alter Kasernen bietet. Wir bemühen uns, ungewöhnliche Künstler und Genres zu präsentieren, die andernorts kaum Platz finden. Wir unterstützen lokale Bands und organisieren regelmäßig gemeinsame Musikabende. Zusammen mit unseren Besucher:innen erwecken wir das Areal zu neuem Leben - wir knüpfen an die Vergangenheit an, verleihen ihr aber die Farbe, die ihr einst gefehlt hat."
+        },
+        "programme": {
+            "label": "Program",
+            "texts": [
+                "Ausstellung von Vans, Bussen, Geländewagen und Overland-Fahrzeugen",
+                "Vorträge zu Themen rund ums Reisen, den Eigenbau von Fahrzeugen sowie rechtlichen Herausforderungen",
+                "Jeden Abend und auch tagsüber dürfen Sie sich auf mehrere thematische Konzerte freuen"
+            ]
+        },
+        "contacts": {
+            "label": "Kontakte",
+            "organizational": "Organisatorische&nbsp;Angelegenheiten",
+            "technical": "Technische&nbsp;Unterstützung",
             "media": "Media"
         }
     }
