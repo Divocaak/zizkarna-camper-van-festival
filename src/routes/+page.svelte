@@ -13,9 +13,15 @@
 		{
 			"@context": "https://schema.org",
 			"@type": "Festival",
-			"name": "DHOGH Festival 2025",
-			"startDate": "2025-06-18",
-			"endDate": "2025-06-20",
+			"name": {
+				"cs": "DIY Karavan Festival",
+				"en": "DIY Caravan Festival",
+				"de": "DIY Karavan Festival"
+			},
+			"startDate": "2025-09-26",
+			"endDate": "2025-09-27",
+			"eventStatus": "https://schema.org/EventScheduled",
+			"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
 			"location": {
 				"@type": "Place",
 				"name": "Žižkárna",
@@ -25,9 +31,59 @@
 					"streetAddress": "Žižkova tř. 28",
 					"addressLocality": "České Budějovice",
 					"addressCountry": "CZ"
+				},
+				"description": {
+					"cs": "Žižkárna je kulturním prostorem s atmosférou starých kasáren v Českých Budějovicích, zaměřeným na nezvyklé interprety a žánry.",
+					"en": "Žižkárna is a cultural space in České Budějovice with the unique atmosphere of old barracks, focusing on unconventional performers and genres.",
+					"de": "Žižkárna ist ein Kulturraum in České Budějovice mit der einzigartigen Atmosphäre alter Kasernen, der sich auf ungewöhnliche Künstler und Genres konzentriert."
 				}
 			},
-			"description": "Festival propojuje taneční hudbu, umění, filozofii a komunitního ducha undergroundové scény. Poskytuje nejen kulturní zážitek, ale i prostor pro hlubší reflexi nad významem elektronické hudby a jejího vlivu na městský noční život."
+			"description": {
+				"cs": "DIY Karavan Festival v Žižkárně nabídne setkání nadšenců do svobodného cestování, alternativního bydlení a kultury DIY. Dvoudenní program 26.–27. září 2025 přinese přehlídku originálně přestavěných karavanů, dodávek a přívěsů, workshopy, přednášky a koncerty.",
+				"en": "The DIY Caravan Festival at Žižkárna offers a unique gathering for free travel, alternative living, and DIY culture enthusiasts. On September 26–27, 2025, it will feature an exhibition of creatively converted caravans, vans, and trailers, workshops, talks, and live concerts.",
+				"de": "Das DIY Karavan Festival in der Žižkárna bietet ein Treffen für Liebhaber des freien Reisens, alternativen Wohnens und der DIY-Kultur. Am 26. und 27. September 2025 gibt es eine Ausstellung originell umgebauter Wohnwagen, Vans und Anhänger, Workshops, Vorträge und Konzerte."
+			},
+			"image": [
+				"https://example.com/festival-image1.jpg",
+				"https://example.com/festival-image2.jpg"
+			],
+			"performer": [
+				{
+					"@type": "PerformingGroup",
+					"name": "Lokální a zahraniční hudebníci"
+				}
+			],
+			"organizer": {
+				"@type": "Organization",
+				"name": "Žižkárna",
+				"url": "https://zizkarna.cz",
+				"contactPoint": [
+					{
+						"@type": "ContactPoint",
+						"contactType": "Organizační záležitosti",
+						"email": "info@zizkarna.cz"
+					},
+					{
+						"@type": "ContactPoint",
+						"contactType": "Technické zajištění",
+						"email": "tech@zizkarna.cz"
+					},
+					{
+						"@type": "ContactPoint",
+						"contactType": "Media",
+						"email": "media@zizkarna.cz"
+					}
+				]
+			},
+			"offers": {
+				"@type": "Offer",
+				"url": "https://example.com/tickets",
+				"availability": "https://schema.org/InStock",
+				"price": "0",
+				"priceCurrency": "CZK",
+				"validFrom": "2025-01-01"
+			},
+			"language": ["cs", "en", "de"]
 		}
 	</script>
 </svelte:head>
@@ -35,6 +91,7 @@
 <div class="localization-btns-wrapper">
 	<LocalizationButton label="cz" newVal="cs" />
 	<LocalizationButton label="en" newVal="en" />
+	<LocalizationButton label="de" newVal="de" />
 </div>
 
 <div class="landing">
@@ -45,11 +102,11 @@
 </div>
 
 <ContentBlock title={langs[$lang].about.label} icon="car.svg">
-	<div slot="left"><p>{langs[$lang].about.left}</p></div>
-	<div slot="right"><p>{langs[$lang].about.right}</p></div>
+	<div slot="left" class="button-wrapper"><FormButton /></div>
+	<div slot="right"><p>{langs[$lang].about.text}</p></div>
 </ContentBlock>
 
-<ContentBlock title={langs[$lang].zizkarna.label} icon="character.svg">
+<ContentBlock title={langs[$lang].zizkarna.label} icon="character.svg" imgGal={true}>
 	<div slot="left"><p>{langs[$lang].zizkarna.text}</p></div>
 	<div slot="right" class="about-img-wrapper">
 		<img src="/about/0.jpg" alt="about zizkarna" />
@@ -59,8 +116,10 @@
 	</div>
 </ContentBlock>
 
-<ContentBlock title={langs[$lang].activities.label} icon="fire.svg">
-	<div slot="left"><p>{langs[$lang].activities.text}</p></div>
+<ContentBlock title={langs[$lang].programme.label} icon="fire.svg">
+	<div slot="left">
+		{#each langs[$lang].programme.texts as text}<p>{text}</p>{/each}
+	</div>
 	<div slot="right" class="button-wrapper"><FormButton /></div>
 </ContentBlock>
 
@@ -79,22 +138,21 @@
 		<ContactRow label={langs[$lang].contacts.organizational} mail="camperfest@zizkarna.cz" />
 		<ContactRow label={langs[$lang].contacts.technical} mail="technika@zizkarna.cz" />
 		<ContactRow label={langs[$lang].contacts.media} mail="media@zizkarna.cz" />
-		<p class="signature">Coded and maintained by <a href="https://divokyvojtech.cz" target="_blank">Vojtěch Divoký</a></p>
+		<p class="signature">
+			Coded and maintained by <a href="https://divokyvojtech.cz" target="_blank">Vojtěch Divoký</a>
+		</p>
 	</div>
 </ContentBlock>
 
-<!-- TODO meta tags RADEK -->
-<!-- TODO seo jsons -->
-
 <style>
-	.localization-btns-wrapper{
+	.localization-btns-wrapper {
 		display: flex;
 		position: fixed;
 		z-index: 100;
-		width: calc(100% - 2* .5rem);
+		width: calc(100% - 2 * 0.5rem);
 		justify-content: end;
-		gap: .5rem;
-		padding: .5rem;
+		gap: 0.5rem;
+		padding: 0.5rem;
 	}
 
 	.landing {
@@ -131,15 +189,19 @@
 	}
 
 	.about-img-wrapper img {
-		width: calc(100% - var(--general-padding) / 2);
+		width: calc(100% - var(--general-padding) / 8);
 		height: auto;
 		justify-self: center;
-		padding: calc(var(--general-padding) / 4);
+		padding: calc(var(--general-padding) / 8);
 	}
 
 	.button-wrapper {
 		position: relative;
 		display: flex;
+		height: 100%;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.contacts-wrapper {
@@ -154,7 +216,8 @@
 		height: 400px;
 	}
 
-	.signature, .signature a{
+	.signature,
+	.signature a {
 		padding-top: 200px;
 		font-size: var(--fs-8);
 		text-align: end;

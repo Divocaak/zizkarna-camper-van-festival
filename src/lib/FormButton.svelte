@@ -3,7 +3,7 @@
 	import langs from '$lib/localization.json';
 </script>
 
-<a href="/">{@html langs[$lang].formButtonText}</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeboiEIeN9ZFpn9l8kkjPRukv5KT8l645W-VP-KEqXMlx7sKA/viewform" target="_blank">{@html langs[$lang].formButtonText}</a>
 
 <style>
 	a {

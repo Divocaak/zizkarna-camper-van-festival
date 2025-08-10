@@ -1,14 +1,16 @@
 <script>
 	export let title;
 	export let icon;
+
+	export let imgGal = false;
 </script>
 
 <div class="wrapper">
 	<img src="/icons/{icon}" alt="svg icon" />
 	<h1>{@html title}</h1>
 	<div class="content-wrapper">
-		<div class="left"><slot name="left"></slot></div>
-		<div class="right"><slot name="right"></slot></div>
+		<div class="left" class:img-gal={imgGal}><slot name="left"></slot></div>
+		<div class="right" class:img-gal={imgGal}><slot name="right"></slot></div>
 	</div>
 </div>
 
@@ -28,7 +30,7 @@
 	}
 
 	.wrapper img {
-		height: 100px;
+		height: 90px;
 		width: auto;
 		position: absolute;
 		left: 50%;
@@ -58,12 +60,25 @@
 		justify-content: flex-start;
 	}
 
+	
 	.content-wrapper .left {
 		margin-right: var(--general-padding);
 	}
-
+	
 	.content-wrapper .right {
 		margin-left: var(--general-padding);
+	}
+
+	.content-wrapper .left.img-gal{
+		width: 45%;
+	}
+
+	.content-wrapper .right.img-gal{
+		margin-left: 0;
+		width: 55%;
+
+		align-items: center;
+		justify-content: center;
 	}
 
 	@media only screen and (max-width: 600px) {
@@ -82,7 +97,9 @@
 		}
 
 		.content-wrapper .left,
-		.content-wrapper .right {
+		.content-wrapper .right,
+		.content-wrapper .left.img-gal,
+		.content-wrapper .right.img-gal {
 			margin: 0;
 			width: 100%;
 		}
