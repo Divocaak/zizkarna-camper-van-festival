@@ -12,78 +12,230 @@
 	<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
-			"@type": "Festival",
-			"name": {
-				"cs": "DIY Karavan Festival",
-				"en": "DIY Caravan Festival",
-				"de": "DIY Karavan Festival"
+			"@type": "MusicFestival",
+			"name": "DIY Caravan Festival 2025",
+			"description": {
+				"cs": "🚙 Nomádi přijíždějí do Budějc! 🛠️ Přehlídka karavanů, přívěsů, pick-upů a mnoho dalšího ve stylu udělej si sám (DIY). 🎸 Těšit se také můžete na workshopy, přednášky a koncerty.",
+				"en": "🚙 Nomads are coming to Budějce! 🛠️ A showcase of caravans, trailers, pick-ups, and much more in a DIY (do-it-yourself) style. 🎸 You can also look forward to workshops, talks, and concerts.",
+				"de": "🚙 Nomaden kommen nach Budějce! 🛠️ Eine Ausstellung von Wohnwagen, Anhängern, Pick-ups und vielem mehr im DIY-(Do-it-yourself)-Stil. 🎸 Freut euch außerdem auf Workshops, Vorträge und Konzerte."
 			},
 			"startDate": "2025-09-26",
 			"endDate": "2025-09-27",
 			"eventStatus": "https://schema.org/EventScheduled",
 			"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+			"image": "https://program.zizkarna.cz/dynamic/events/277.jpg",
+			"url": "https://program.zizkarna.cz/",
+			"keywords": ["festival", "hudba", "workshop", "karavany", "přednášky", "koncerty"],
 			"location": {
-				"@type": "Place",
+				"@type": "MusicVenue",
 				"name": "Žižkárna",
-				"url": "https://zizkarna.cz",
 				"address": {
 					"@type": "PostalAddress",
-					"streetAddress": "Žižkova tř. 28",
-					"addressLocality": "České Budějovice",
+					"streetAddress": "Žižkova tř. 171/28",
+					"addressLocality": "České Budějovice 6",
+					"addressRegion": "České Budějovice",
+					"postalCode": "37004",
 					"addressCountry": "CZ"
 				},
-				"description": {
-					"cs": "Žižkárna je kulturním prostorem s atmosférou starých kasáren v Českých Budějovicích, zaměřeným na nezvyklé interprety a žánry.",
-					"en": "Žižkárna is a cultural space in České Budějovice with the unique atmosphere of old barracks, focusing on unconventional performers and genres.",
-					"de": "Žižkárna ist ein Kulturraum in České Budějovice mit der einzigartigen Atmosphäre alter Kasernen, der sich auf ungewöhnliche Künstler und Genres konzentriert."
-				}
+				"sameAs": [
+					"https://zizkarna.cz/",
+					"https://program.zizkarna.cz/",
+					"https://www.instagram.com/zizkarna",
+					"https://www.facebook.com/zizkarnacb/",
+					"https://www.youtube.com/@Zizkarna"
+				]
 			},
-			"description": {
-				"cs": "DIY Karavan Festival v Žižkárně nabídne setkání nadšenců do svobodného cestování, alternativního bydlení a kultury DIY. Dvoudenní program 26.–27. září 2025 přinese přehlídku originálně přestavěných karavanů, dodávek a přívěsů, workshopy, přednášky a koncerty.",
-				"en": "The DIY Caravan Festival at Žižkárna offers a unique gathering for free travel, alternative living, and DIY culture enthusiasts. On September 26–27, 2025, it will feature an exhibition of creatively converted caravans, vans, and trailers, workshops, talks, and live concerts.",
-				"de": "Das DIY Karavan Festival in der Žižkárna bietet ein Treffen für Liebhaber des freien Reisens, alternativen Wohnens und der DIY-Kultur. Am 26. und 27. September 2025 gibt es eine Ausstellung originell umgebauter Wohnwagen, Vans und Anhänger, Workshops, Vorträge und Konzerte."
-			},
-			"image": [
-				"https://example.com/festival-image1.jpg",
-				"https://example.com/festival-image2.jpg"
-			],
-			"performer": [
-				{
-					"@type": "PerformingGroup",
-					"name": "Lokální a zahraniční hudebníci"
-				}
-			],
 			"organizer": {
 				"@type": "Organization",
 				"name": "Žižkárna",
 				"url": "https://zizkarna.cz",
-				"contactPoint": [
-					{
-						"@type": "ContactPoint",
-						"contactType": "Organizační záležitosti",
-						"email": "info@zizkarna.cz"
-					},
-					{
-						"@type": "ContactPoint",
-						"contactType": "Technické zajištění",
-						"email": "tech@zizkarna.cz"
-					},
-					{
-						"@type": "ContactPoint",
-						"contactType": "Media",
-						"email": "media@zizkarna.cz"
-					}
-				]
+				"contactPoint": {
+					"@type": "ContactPoint",
+					"email": "info@zizkarna.cz",
+					"telephone": "+420722680481"
+				}
 			},
 			"offers": {
 				"@type": "Offer",
-				"url": "https://example.com/tickets",
-				"availability": "https://schema.org/InStock",
 				"price": "0",
 				"priceCurrency": "CZK",
-				"validFrom": "2025-01-01"
+				"availability": "https://schema.org/InStoreOnly",
+				"url": "https://program.zizkarna.cz/"
 			},
-			"language": ["cs", "en", "de"]
+			"subEvent": [
+				{
+					"@type": "MusicEvent",
+					"name": {
+						"cs": "DIY Caravan Festival: pátek",
+						"en": "DIY Caravan Festival: Friday",
+						"de": "DIY Caravan Festival: Freitag"
+					},
+					"startDate": "2025-09-26",
+					"endDate": "2025-09-26",
+					"inLanguage": ["cs", "en", "de"],
+					"description": {
+						"cs": "🚙 Nomádi přijíždějí do Budějc! 🛠️ Přehlídka karavanů, přívěsů, pick-upů a mnoho dalšího ve stylu udělej si sám (DIY). 🎸 Těšit se také můžete na workshopy, přednášky a koncerty.",
+						"en": "🚙 Nomads are coming to Budějce! 🛠️ A showcase of caravans, trailers, pick-ups, and much more in a DIY style. 🎸 You can also look forward to workshops, talks, and concerts.",
+						"de": "🚙 Nomaden kommen nach Budějce! 🛠️ Eine Ausstellung von Wohnwagen, Anhängern, Pick-ups und vielem mehr im DIY-Stil. 🎸 Freut euch außerdem auf Workshops, Vorträge und Konzerte."
+					},
+					"doorTime": "15:00:00",
+					"url": "https://program.zizkarna.cz/277",
+					"image": "https://program.zizkarna.cz/dynamic/events/277.jpg",
+					"isAccessibleForFree": true,
+					"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+					"eventStatus": "https://schema.org/EventScheduled",
+					"location": {
+						"@type": "MusicVenue",
+						"name": "Žižkárna",
+						"address": {
+							"@type": "PostalAddress",
+							"streetAddress": "Žižkova tř. 171/28",
+							"addressLocality": "České Budějovice 6",
+							"addressRegion": "České Budějovice",
+							"postalCode": "37004",
+							"addressCountry": "CZ"
+						},
+						"sameAs": [
+							"https://zizkarna.cz/",
+							"https://program.zizkarna.cz/",
+							"https://www.instagram.com/zizkarna",
+							"https://www.facebook.com/zizkarnacb/",
+							"https://www.youtube.com/@Zizkarna"
+						]
+					},
+					"performer": [
+						{
+							"@type": "MusicGroup",
+							"name": "Nixon Lads",
+							"performTime": "17:45:00",
+							"genre": ["punk", "alternative", "indie"],
+							"description": {
+								"cs": "Nejlepší americká kapela ve Strakonicích se žánrově pohybuje někde na ose indie-alternative-punk se silným příklonem k devadesátkám.",
+								"en": "An indie-alternative-punk band from Strakonice inspired by 90s sounds.",
+								"de": "Eine Indie-Alternative-Punk-Band aus Strakonice, inspiriert von den 90er Jahren."
+							},
+							"sameAs": [
+								"https://facebook.com/nixonlads",
+								"https://instagram.com/nixonlads",
+								"https://open.spotify.com/artist/2adwR18rLlxd9kr43jMUWt?si=292cf8b737264347"
+							]
+						},
+						{
+							"@type": "MusicGroup",
+							"name": "Forest Ray",
+							"performTime": "19:30:00",
+							"genre": ["pop-rock", "folk", "psychedelický rock", "western"],
+							"description": {
+								"cs": "Psych-folk-rocková kapela Forest Ray vznikla v roce 2015 a spojuje prvky psych rocku s garážovým a folk rockem.",
+								"en": "Forest Ray blends psychedelic folk-rock with garage and pop-rock influences since 2015.",
+								"de": "Forest Ray kombiniert seit 2015 Psychedelic-Folk-Rock mit Garage- und Pop-Rock-Einflüssen."
+							},
+							"sameAs": [
+								"https://open.spotify.com/artist/6aHS1ijoQqNunPy8K2zzAp",
+								"https://instagram.com/forestrayrecords",
+								"https://forestray.bandcamp.com/"
+							]
+						},
+						{
+							"@type": "MusicGroup",
+							"name": "DJ Antonín Padrta",
+							"performTime": "20:30:00",
+							"genre": ["disco", "house", "funk", "soul"],
+							"description": {
+								"cs": "DJ z Českých Budějovic, který rozdává radost house music mixy s příměsí disco, funky a soulu.",
+								"en": "A DJ from České Budějovice mixing house, disco, funk, and soul.",
+								"de": "Ein DJ aus České Budějovice, der House, Disco, Funk und Soul mischt."
+							},
+							"sameAs": [
+								"https://soundcloud.com/anton-n-padrta",
+								"https://facebook.com/antonin.padrta/"
+							]
+						}
+					]
+				},
+				{
+					"@type": "MusicEvent",
+					"name": {
+						"cs": "DIY Caravan Festival: sobota",
+						"en": "DIY Caravan Festival: Saturday",
+						"de": "DIY Caravan Festival: Samstag"
+					},
+					"startDate": "2025-09-27",
+					"endDate": "2025-09-27",
+					"inLanguage": ["cs", "en", "de"],
+					"description": {
+						"cs": "🚙 Nomádi přijíždějí do Budějc! 🛠️ Přehlídka karavanů, přívěsů, pick-upů a mnoho dalšího ve stylu udělej si sám (DIY). 🎸 Těšit se také můžete na workshopy, přednášky a koncerty.",
+						"en": "🚙 Nomads are coming to Budějce! 🛠️ A showcase of caravans, trailers, pick-ups, and much more in a DIY style. 🎸 You can also look forward to workshops, talks, and concerts.",
+						"de": "🚙 Nomaden kommen nach Budějce! 🛠️ Eine Ausstellung von Wohnwagen, Anhängern, Pick-ups und vielem mehr im DIY-Stil. 🎸 Freut euch außerdem auf Workshops, Vorträge und Konzerte."
+					},
+					"doorTime": "15:00:00",
+					"url": "https://program.zizkarna.cz/278",
+					"image": "https://program.zizkarna.cz/dynamic/events/278.jpg",
+					"isAccessibleForFree": true,
+					"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+					"eventStatus": "https://schema.org/EventScheduled",
+					"location": {
+						"@type": "MusicVenue",
+						"name": "Žižkárna",
+						"address": {
+							"@type": "PostalAddress",
+							"streetAddress": "Žižkova tř. 171/28",
+							"addressLocality": "České Budějovice 6",
+							"addressRegion": "České Budějovice",
+							"postalCode": "37004",
+							"addressCountry": "CZ"
+						},
+						"sameAs": [
+							"https://zizkarna.cz/",
+							"https://program.zizkarna.cz/",
+							"https://www.instagram.com/zizkarna",
+							"https://www.facebook.com/zizkarnacb/",
+							"https://www.youtube.com/@Zizkarna"
+						]
+					},
+					"performer": [
+						{
+							"@type": "MusicGroup",
+							"name": "Strejda Erdja",
+							"performTime": "16:30:00",
+							"genre": ["hip hop", "street dance"],
+							"description": {
+								"cs": "Energický hip-hopový performer, který propojuje hudbu a street dance.",
+								"en": "Energetic hip-hop performer combining music and street dance.",
+								"de": "Energiegeladener Hip-Hop-Künstler, der Musik und Street Dance verbindet."
+							},
+							"sameAs": [
+								"https://instagram.com/strejda_erdja/",
+								"https://facebook.com/profile.php?id=100079653230239"
+							]
+						},
+						{
+							"@type": "MusicGroup",
+							"name": "Pobodá",
+							"performTime": "19:00:00",
+							"genre": ["bigbeat"],
+							"description": {
+								"cs": "Poctivej západočeskej skejtovej bigbeat. Šestičlené uskupení, jehož vystoupení tě pohladí po duši a pobodá do uší.",
+								"en": "Authentic West Bohemian skate bigbeat with an emotional punch.",
+								"de": "Authentischer westböhmischer Skate-Bigbeat mit emotionaler Power."
+							},
+							"sameAs": ["https://youtube.com/watch?v=VuLcCICWdk4", "https://instagram.com/_poboda"]
+						},
+						{
+							"@type": "MusicGroup",
+							"name": "Stepní běžec",
+							"performTime": "20:30:00",
+							"genre": ["post", "acid", "western"],
+							"description": {
+								"cs": "Čtyřčlenný dostavník z Prahy vezoucí westernové kytary vyprahlou krajinou.",
+								"en": "A four-member Prague band riding through dusty landscapes with western guitars.",
+								"de": "Vierköpfige Band aus Prag, die mit Western-Gitarren durch staubige Landschaften fährt."
+							},
+							"sameAs": ["https://instagram.com/stepni_bezec_", "https://stepnibezec.bandcamp.com/"]
+						}
+					]
+				}
+			]
 		}
 	</script>
 </svelte:head>
@@ -121,6 +273,25 @@
 		{#each langs[$lang].programme.texts as text}<p>{text}</p>{/each}
 	</div>
 	<div slot="right" class="button-wrapper"><FormButton /></div>
+	<div slot="left-bottom">
+		<h2>
+			<a href="https://program.zizkarna.cz/277" target="_blank">{langs[$lang].programme.friday}</a>
+		</h2>
+		<p>15:00 {langs[$lang].programme.doors}</p>
+		<p>17:45 Nixon Lads</p>
+		<p>19:30 Forest Ray</p>
+		<p>20:30 DJ Antonín Padrta</p>
+	</div>
+	<div slot="right-bottom">
+		<h2>
+			<a href="https://program.zizkarna.cz/278" target="_blank">{langs[$lang].programme.saturday}</a
+			>
+		</h2>
+		<p>15:00 {langs[$lang].programme.doors}</p>
+		<p>16:30 Strejda Erdja</p>
+		<p>19:00 Pobodá</p>
+		<p>20:30 Stepní běžec</p>
+	</div>
 </ContentBlock>
 
 <ContentBlock title={langs[$lang].contacts.label} icon="car.svg">
@@ -221,6 +392,10 @@
 		padding-top: 200px;
 		font-size: var(--fs-8);
 		text-align: end;
+	}
+
+	h2:has(> a) {
+		text-align: center;
 	}
 
 	@media only screen and (max-width: 600px) {

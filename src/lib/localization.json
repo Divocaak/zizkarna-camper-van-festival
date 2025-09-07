@@ -15,7 +15,10 @@
                 "Přehlídka dodávek, autobusů, off-roadů a overlanderů",
                 "Přednášky na témata spojená s cestováním, vlastní stavbou, ale i například na právní úskalí",
                 "Každý večer a během dne se můžete těšit na několik tematických koncertů"
-            ]
+            ],
+            "friday": "Pátek",
+            "saturday": "Sobota",
+            "doors": "Otevření Žižkárny"
         },
         "contacts": {
             "label": "Kontakty",
@@ -40,7 +43,10 @@
                 "DIY Van, bus, off-road and overlanders exhibition",
                 "Talks on topics related to travel, DIY vehicle builds, and even legal challenges",
                 "Every evening and throughout the day, you can look forward to a series of themed concerts"
-            ]
+            ],
+            "friday": "Friday",
+            "saturday": "Saturday",
+            "doors": "Opening of Žižkárna"
         },
         "contacts": {
             "label": "Contacts",
@@ -65,7 +71,10 @@
                 "Ausstellung von Vans, Bussen, Geländewagen und Overland-Fahrzeugen",
                 "Vorträge zu Themen rund ums Reisen, den Eigenbau von Fahrzeugen sowie rechtlichen Herausforderungen",
                 "Jeden Abend und auch tagsüber dürfen Sie sich auf mehrere thematische Konzerte freuen"
-            ]
+            ],
+            "friday": "Freitag",
+            "saturday": "Samstag",
+            "doors": "Eröffnung der Žižkárna"
         },
         "contacts": {
             "label": "Kontakte",

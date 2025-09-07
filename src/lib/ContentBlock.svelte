@@ -12,6 +12,10 @@
 		<div class="left" class:img-gal={imgGal}><slot name="left"></slot></div>
 		<div class="right" class:img-gal={imgGal}><slot name="right"></slot></div>
 	</div>
+	<div class="content-wrapper">
+		<div class="left" class:img-gal={imgGal}><slot name="left-bottom"></slot></div>
+		<div class="right" class:img-gal={imgGal}><slot name="right-bottom"></slot></div>
+	</div>
 </div>
 
 <style>
